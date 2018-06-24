@@ -8,6 +8,7 @@ class Login_model extends CI_Model {
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
 
+
 		$query = $this->db->where('username', $username)->where('password', $password)->get('tb_user');
 
 		if ($this->db->affected_rows() > 0) {

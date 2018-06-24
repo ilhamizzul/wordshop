@@ -33,13 +33,13 @@
 						<div class="panel-body">
 							<div class="row">
 								<?php 
-									if ($count_tulisan != null) {
+									if ($count_tulisan != null || $tulisan != null) {
 										foreach ($tulisan as $data) {
 											echo '
 												<div class="col-md-12">
 													<div class="metric">
 														<p>
-															<img src="'.base_url().'uploads/'.$data->foto_profil.'" style="padding-right: 12px;" class="img-circle pull-left" alt="Avatar">
+															<img src="'.base_url().'uploads/'.$data->foto_profil.'" style="padding-right: 12px;max-width:7%;height:auto;" class="img-circle pull-left" alt="Avatar">
 															<span class="number"><a href="'.base_url().'index.php/detail/detail_artikel/'.$data->id_artikel.'">'.$data->judul.'</a></span>
 															<span class="title">'.$data->waktu.'</span>
 														</p>

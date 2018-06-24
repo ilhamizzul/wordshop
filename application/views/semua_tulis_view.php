@@ -16,7 +16,7 @@
 											<div class="col-md-4">
 												<div class="metric">
 													<p>
-														<a href="'.base_url().'index.php/detail/detail_artikel/'.$data->id_artikel.'">
+														<a href="'.base_url().'index.php/detail/detail_private/'.$data->id_artikel.'">
 															<span class="number" style="font-size: 22px;">'.$data->judul.'</span>
 														</a>
 														<span class="title">'.$data->waktu.'</span>

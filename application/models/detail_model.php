@@ -8,6 +8,7 @@ class Detail_model extends CI_Model {
 		return $this->db->select('*')
 						->from('tb_artikel')
 						->where('id_artikel', $id)
+						->join('tb_user', 'tb_user.id_user = tb_artikel.id_user')
 						->get()
 						->result();
 	}
